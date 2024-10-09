@@ -10,12 +10,16 @@ import Contact from './Pages/Contact.jsx'
 import About from './Pages/About.jsx'
 import Gallery from './Pages/Gallery.jsx'
 import Booking from './Pages/Booking.jsx'
+import Navbar from './components/Navbar.jsx'
 import './index.css'
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
+        <Navbar></Navbar>
+        <p>wow</p>
+        <div className="test">test</div>
       <Routes>
         <Route path='/' element={<App />} />
         <Route path='contact' element={<Contact />} /> 
